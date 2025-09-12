@@ -1,16 +1,143 @@
-<div class="container" id="cvContent">
-    <header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon Bin Akter - CV</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8fafc;
+      color: #1e293b;
+    }
+
+    /* HEADER SECTION */
+    header {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      gap: 20px;
+      flex-wrap: wrap;
+      background-color: #e2e8f0;
+    }
+
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #1e293b;
+    }
+
+    .header-text h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    .header-text p {
+      margin: 5px 0;
+    }
+
+    /* NAVIGATION BAR */
+    .navbar {
+      background-color: #1e293b;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      padding: 5px 20px;
+      gap: 15px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 1em;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #ffffff;
+      color: #1e293b;
+      border-radius: 5px;
+      padding: 5px 10px;
+    }
+
+    /* MAIN CONTENT */
+    main {
+      padding: 20px;
+    }
+
+    h2 {
+      color: #1e293b;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #1e293b;
+      display: inline-block;
+      padding-bottom: 3px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .institutions ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .links a {
+      text-decoration: none;
+      color: #2563eb;
+      margin-right: 15px;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="Profile.png" alt="Simon Bin Akter" class="profile-img">
+    <div class="header-text">
       <h1>Simon Bin Akter</h1>
       <p>Lecturer, Computer Science &amp; Engineering • Researcher in Trustworthy AI in Multidisciplinary Domains</p>
-      <p>📍 Uttara, Dhaka-1230, Bangladesh<br>📧 simonbinakter8@gmail.com • 📞 (+880) 1622030245</p>
-      <div class="links">
-        <a href="https://github.com/Simon-48" target="_blank">GitHub: Simon-48</a> |
-        <a href="https://linkedin.com/in/simon48" target="_blank">LinkedIn</a> |
-        <a href="https://scholar.google.com/citations?user=W8qBdTMAAAAJ&amp;hl=en" target="_blank">Google Scholar</a> |
-        <a href="https://www.researchgate.net/profile/Simon-Akter" target="_blank">ResearchGate</a> |
-	<a href="https://drive.google.com/uc?export=download&id=1RMcPXJxGzkIXzRnOO8maWvZk0svNdyRn" download>Curriculum Vitae</a>
-      </div>
-    </header>
+      <p>📍 Uttara, Dhaka-1230, Bangladesh<br>
+         📧 simonbinakter8@gmail.com • 📞 (+880) 1622030245
+      </p>
+    </div>
+  </header>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <a href="https://github.com/Simon-48" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/simon48" target="_blank">LinkedIn</a>
+    <a href="https://scholar.google.com/citations?user=W8qBdTMAAAAJ&hl=en" target="_blank">Google Scholar</a>
+    <a href="https://www.researchgate.net/profile/Simon-Akter" target="_blank">ResearchGate</a>
+    <a href="https://drive.google.com/uc?export=download&id=1RMcPXJxGzkIXzRnOO8maWvZk0svNdyRn" download>Curriculum Vitae</a>
+  </nav>
 
     <main>
       <section>
