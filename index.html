@@ -4,117 +4,125 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Simon Bin Akter - CV</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f8fafc;
-      color: #1e293b;
-    }
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #C6FCFF; /* Light sky blue everywhere */
+    color: #1e293b; /* Dark text for readability */
+  }
 
-    /* HEADER SECTION */
+  /* HEADER SECTION */
+  header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #C6FCFF; /* Same light sky blue */
+    color: #1e293b;
+  }
+
+  .profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #1877F2; /* Blue outline for profile pic */
+  }
+
+  .header-text h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+
+  .header-text p {
+    margin: 5px 0;
+  }
+
+  /* NAVIGATION BAR (MIDDLE BAR WITH LINKS) */
+  .navbar {
+    background-color: #1877F2; /* Facebook blue */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    gap: 15px;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1em;
+    transition: 0.3s;
+  }
+
+  .navbar a:hover {
+    background-color: #ffffff;
+    color: #1e293b;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+
+  /* MAIN CONTENT */
+  main {
+    padding: 20px;
+    background: #C6FCFF; /* Same light sky blue */
+    border-radius: 10px;
+    margin: 20px;
+  }
+
+  h2 {
+    color: #22c55e; /* Direct green text for section headings */
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #22c55e; /* Green underline */
+    display: inline-block;
+    padding-bottom: 3px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  .institutions ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  .links a {
+    text-decoration: none;
+    color: #0d5e74; /* Darker cyan for links */
+    margin-right: 15px;
+    font-weight: 600;
+  }
+
+  .links a:hover {
+    text-decoration: underline;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
     header {
-      display: flex;
-      align-items: center;
-      padding: 20px;
-      gap: 20px;
-      flex-wrap: wrap;
-      background-color: #e2e8f0;
+      flex-direction: column;
+      align-items: flex-start;
     }
 
-    .profile-img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 2px solid #1e293b;
-    }
-
-    .header-text h1 {
-      margin: 0;
-      font-size: 2em;
-    }
-
-    .header-text p {
-      margin: 5px 0;
-    }
-
-    /* NAVIGATION BAR */
     .navbar {
-      background-color: #1e293b;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      padding: 5px 20px;
-      gap: 15px;
+      flex-direction: column;
+      align-items: flex-start;
     }
+  }
+</style>
 
-    .navbar a {
-      text-decoration: none;
-      color: #ffffff;
-      font-weight: 500;
-      font-size: 1em;
-      transition: 0.3s;
-    }
-
-    .navbar a:hover {
-      background-color: #ffffff;
-      color: #1e293b;
-      border-radius: 5px;
-      padding: 5px 10px;
-    }
-
-    /* MAIN CONTENT */
-    main {
-      padding: 20px;
-    }
-
-    h2 {
-      color: #1e293b;
-      margin-top: 30px;
-      margin-bottom: 10px;
-      border-bottom: 2px solid #1e293b;
-      display: inline-block;
-      padding-bottom: 3px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 10px;
-    }
-
-    .institutions ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-
-    .links a {
-      text-decoration: none;
-      color: #2563eb;
-      margin-right: 15px;
-    }
-
-    .links a:hover {
-      text-decoration: underline;
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
-  </style>
 </head>
 <body>
 
@@ -334,16 +342,30 @@ Professor, Department of Electrical and Computer Engineering, North South Univer
 
       </section>
 
-      <section>
-        <h2>References</h2>
-        <p><strong>Jorge Fresneda Fernandez, PhD</strong><br>
-        Associate Professor, Martin Tuchman School of Management, New Jersey Institute of Technology, Newark, USA<br>
-        Email: fresneda@njit.edu</p>
+<section>
+  <h2>References</h2>
 
-        <p><strong>David Eisenberg, PhD, MIT, MLIS, PMP</strong><br>
-        Assistant Professor, Department of Information Management &amp; Business Analytics, Montclair State University, USA<br>
-        Email: eisenbergd@montclair.edu</p>
-      </section>
+  <p><strong>Jorge Fresneda Fernandez, PhD</strong><br>
+  Associate Professor, Martin Tuchman School of Management, New Jersey Institute of Technology, Newark, USA<br>
+  Email: fresneda@njit.edu</p>
+
+  <p><strong>David Eisenberg, PhD, MIT, MLIS, PMP</strong><br>
+  Assistant Professor, Department of Information Management &amp; Business Analytics, Montclair State University, USA<br>
+  Email: eisenbergd@montclair.edu</p>
+
+  <p><strong>Tanmoy Sarkar Pias, PhD</strong><br>
+  Postdoctoral Scholar, School of Medicine, Stanford University, Stanford, USA<br>
+  Email: tspias@stanford.edu</p>
+
+  <p><strong>Hafiz Abdur Rahman, PhD</strong><br>
+  Professor, Department of Electrical &amp; Computer Engineering, North South University, Dhaka, Bangladesh<br>
+  Email: hafiz.rahman@northsouth.edu</p>
+
+  <p><strong>Md. Golam Rabiul Alam, PhD</strong><br>
+  Professor, Department of Computer Science and Engineering, BRAC University, Dhaka, Bangladesh<br>
+  Email: rabiul.alam@bracu.ac.bd</p>
+
+</section>
 
       <footer>
 
